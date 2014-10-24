@@ -1,4 +1,4 @@
-Koncept Sim-city
+Koncept Sim-city (v JavaScriptu)
 
 O co jde: Základem je vytvoøit fungující mìsto (domy, továrny, zábavní centra, silnice...).
 Jde o to udržet spokojenost lidí nad nìjakou hranicí a fungující ekonomiku (lidé pracují) a rozvíjet mìsto,
