@@ -1,0 +1,40 @@
+Koncept Sim-city (v JavaScriptu)
+
+O co jde: Základem je vytvořit fungující město (domy, továrny, zábavní centra, silnice...).
+Jde o to udržet spokojenost lidí nad nějakou hranicí a fungující ekonomiku (lidé pracují) a rozvíjet město,
+někdy v budoucnosti třeba i více měst nebo i multiplayer.
+
+*** samozřejmě to, co jsem tady napsal asi bude trvat, než se to vyvine. Nebude to hned na začátku.***
+
+1. save.js
+Jde o soubor, který bude ukládat aktuální postup hry do souboru.
+
+Potřebné součásti:
+objekt window.save - do něj se budou ukládat jednotlivé objekty (domy, silnice...)
+funkce store() - ukládá aktuální pozici ve hře, stěžejní funkce save.js
+funkce load() - načte uložená data
+ID uživatele - id="name" - funguje jako součást, která umožní hru více hráčů na jednom počítači; indikuje, kterého uživatele má načíst.
+
+2. world.js
+Soubor na začátku hry (při prvním spuštění) vyrenderuje svět, kde se bude hrát. Přidá pár domů a jednu fungující továrnu,
+aby se mohlo nějak začít.
+
+3. Vzhled
+Na to se zaměří Franta. V HTML a CSS (style.css).
+
+*** Commity v Githubu ***
+Pro přidání souboru pište do komentu "+" (plus) a co nejstručněji (3-4 slova).
+__________________________________________________________
+Nějaké funkce (sem piště svoje nápady):
+
+Spokojenost lidí
+Při stavbě a vylepšování zábvních center, obydlí, služeb (např. MHD - vlaky, metro, autobusy až časem, můžeme přidat třeba svoz odpadků...)
+se spokojenost zvyšuje. Lidé mají chuť jít do práce. Spokojenost naopak snižuje stavba a rozšiřování továren...
+
+Těžba surovin
+Město těží suroviny, může je vyvážet a tím získává finance na rozvoj. Zároveň je potřebuje na stavby (pokuid je nemá, může je dovážet).
+Na mapě budou skryté a uživatel je při prvním pohledu neuvidí. Musí si zaplatit geologický průzkum a poté postavit továrny na těžbu - půjde to pouze v místě surovin.
+
+
+Bankovní půjčky
+Hráč (město) si může půjčit peníze s tím, že je pak nějak musí splácet.
