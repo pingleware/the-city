@@ -6,6 +6,8 @@ někdy v budoucnosti třeba i více měst nebo i multiplayer.
 
 *** samozřejmě to, co jsem tady napsal asi bude trvat, než se to vyvine. Nebude to hned na začátku.***
 
+Princip hry: stavba bude probíhat pomocí jednoduchého menu, kde uživatel vybere stavbu a pak ji postaví (závisí na penězích).
+
 1. save.js
 Jde o soubor, který bude ukládat aktuální postup hry do souboru.
 
@@ -22,8 +24,22 @@ aby se mohlo nějak začít.
 3. Vzhled
 Na to se zaměří Franta. V HTML a CSS (style.css).
 
+4. knihovna (databáze) objektů
+Jde o soubor, kde se budou skladovat data o jednotlivých objektech.
+Ke každému objektu:
+ "type" -> bude mít název (anglicky, jedno slovo), který popisuje objekt (např. street, hotel)
+ "upgrade" -> jde o číslo s dvěmi číslicemi, udává úroveň budovy, základní je 00
+ "img" -> sem se nahraje url obrázku (bude defaultní /img)
+ "money" -> cena budovy/upgradu
+Hierarchie modulů:
+ type -> upgrade -> img
+                 -> money
+
 *** Commity v Githubu ***
 Pro přidání souboru pište do komentu "+" (plus) a co nejstručněji (3-4 slova).
+
+*** Vytváření nových obrázků budov ***
+Vycházejte ze základního obrázku trávy (grass.png) budova může být jakkoliv vysoká, ale je důležité mít základnu (trávu) u spodní hrany obrázku.
 __________________________________________________________
 Nějaké funkce (sem piště svoje nápady):
 
