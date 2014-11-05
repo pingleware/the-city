@@ -25,6 +25,11 @@ Na to se zaměří Franta. V HTML a CSS (style.css).
 *** Commity v Githubu ***
 Pro přidání souboru pište do komentu "+" (plus) a co nejstručněji (3-4 slova).
 __________________________________________________________
+
+Ondra Daneš:
+Začni dělat na principu, že se budovy staví za peníze a při stavbě se prostě odečtou. 
+U každé budovy (teď máme čtyři) je jiná cena. Zkus si s tím pohrát.
+__________________________________________________________
 Nějaké funkce (sem piště svoje nápady):
 
 Spokojenost lidí
