@@ -1,4 +1,5 @@
 var world = {};
+var money = 5000;
 world.min = {x:0,  y:0 };
 world.max = {x:10, y:10};
 
@@ -43,18 +44,26 @@ document.body.appendChild(world.node);
     var img = e.target.parentElement.children[0];
     switch(img.level){
      case 0:
-      img.src = "img/house.png";
-      img.level++;
+      if(money>=1){
+       img.src = "img/house.png";
+       img.level++;
+       money=money-1;
+      }
       break;
      case 1:
+      if(money>=2){
       img.src = "img/block.png";
       img.level++;
+      money=money-2;
+      }
       break;
      case 2:
+      if(money>=3){
       img.src = "img/skyscraper.png";
-      img.level++;
-      break;
+      img.level++
+      momney=money-3;
     }
+      break;
    },false);
   }
  }
