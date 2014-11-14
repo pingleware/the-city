@@ -24,7 +24,7 @@ aby se mohlo nějak začít.
 3. Vzhled
 Na to se zaměří Franta. V HTML a CSS (style.css).
 
-4. knihovna (databáze) objektů
+4. knihovna (databáze) objektů  (object.db - přes JSON)
 Jde o soubor, kde se budou skladovat data o jednotlivých objektech.
 Ke každému objektu:
  "type" -> bude mít název (anglicky, jedno slovo), který popisuje objekt (např. street, hotel)
