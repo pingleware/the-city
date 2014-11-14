@@ -1,0 +1,32 @@
+{
+  /* Roads */
+  
+  /* Asphalt road */
+  "roadAsphalt":{
+   "upgrade": 0,
+   "img": "/img/roads/roadasphalt.png",
+   "money": 0,
+  }
+
+  /* Houses */
+  "basicHouse":[
+    {
+     "upgrade": 0,       /* level 0 */
+     "img": "/img/houses/basichouse00.png",
+     "money": 10000,
+    },
+    {
+     "upgrade": 1,       /* level 1 */
+     "img": "/img/houses/basichouse01.png",
+     "money": 13000,
+    }
+   ]
+  
+  /* Factories */
+  "farm":[
+   {
+    "upgrade": 0,
+    "img": "/img/factories/farm00.png"    
+   }
+  ]
+}
