@@ -7,8 +7,8 @@ body{
  max-width: 100%;
  max-height: 100%;
  overflow: hidden;
- padding-left: 10px; 
-}
+ padding-left: 10px;
+ }
 
 #world{
  position: relative;
@@ -47,4 +47,11 @@ body{
  width: 100%;
  height: 100%;
  z-index: 2;
+}
+#money {
+ padding: 20px;
+ padding-left: 50px;
+ font-size: 20px;
+ font-family: sans-serif;
+ color: black;
 }
