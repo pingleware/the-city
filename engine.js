@@ -1,7 +1,14 @@
 var world = {};
-var money = 5000;
+world.money = 5000;
 world.min = {x:0,  y:0 };
 world.max = {x:10, y:10};
+window.json = false;
+ var load = new XMLHttpRequest();
+ load.onload = function(e) {
+  window.json = JSON.parse( load.responseText );
+ };
+ load.open("get","object.db",true);
+ load.send();
 
 world.node = document.createElement('div');
 world.node.id = "world";
@@ -44,27 +51,28 @@ document.body.appendChild(world.node);
     var img = e.target.parentElement.children[0];
     switch(img.level){
      case 0:
-      if(money>=1){
+      if(world.money>=10){
        img.src = "img/house.png";
        img.level++;
-       money=money-1;
+       world.money=world.money-10;
       }
       break;
      case 1:
-      if(money>=2){
-      img.src = "img/block.png";
-      img.level++;
-      money=money-2;
+      if(world.money>=20){
+       img.src = "img/block.png";
+       img.level++;
+       world.money=world.money-20;
       }
       break;
      case 2:
-      if(money>=3){
-      img.src = "img/skyscraper.png";
-      img.level++
-      momney=money-3;
-    }
+      if(world.money>=30){
+       img.src = "img/skyscraper.png";
+       img.level++
+       world.money=world.money-30;
+      }
       break;
-   },false);
+    }
+   });
   }
  }
 })();
