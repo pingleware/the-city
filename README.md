@@ -40,6 +40,37 @@ Module Hierarchy:
   type -> upgrade -> img
                   -> money
 
+```
+{
+
+  "roadAsphalt":{
+   "upgrade": 0,
+   "img": "/img/roads/roadasphalt.png",
+   "money": 0
+  },
+  "basicHouse":[
+    {
+     "upgrade": 0,  
+     "img": "/img/houses/basichouse00.png",
+     "money": 10000
+    },
+    {
+     "upgrade": 1,  
+     "img": "/img/houses/basichouse01.png",
+     "money": 13000
+    }
+   ],
+  
+  "farm":[
+   {
+    "upgrade": 0,
+    "img": "/img/factories/farm00.png"  
+   }
+  ]
+}
+
+```
+
 
 ## Commits on Github 
 
